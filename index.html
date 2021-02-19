@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chukchi Translator</title>
+ <meta name="Description" content="The #1 online translator for simple phrases and numbers in the Chukchi Language" />
+<link rel='icon' href='https://drive.google.com/thumbnail?id=1eEgp6NjGMTKpYg515O_Md3DdEGvepkAk' type='image/png'/ > 
+<script>
+
+function myFunction() {
+var x =  
+                document.getElementById("myNumber").value; 
+            
+            document.getElementById( 
+              "demo").innerHTML = x; 
+        } 
+        
+function theChicken() {      
+ document.getElementById("demo").innerHTML="";
+                      document.getElementById("demo").placeholder="Translation cleared";
+
+          
+       }
+function elPollo() {
+  var copyText = document.getElementById("demo");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied Chukchi translation: " + copyText.value);
+} 
+
+function welcome() {      
+alert("Welcome to the Chukchi translator!");
+}
+</script>
+
+<style>
+body {
+font-family: futura;
+font-size: 20px;
+background: #5982c9;
+}
+.box {
+width: 100%;
+height: 200px;
+font-size: 24px;
+border-radius: 5px;
+border: 2px solid lightgrey;
+font-family: futura;
+}
+.box:hover {
+border: 2px solid grey;
+background-color: lightgrey;
+}
+.picker {
+width: 70%;
+height: 30px;
+font-size: 20px;
+border-radius: 5px;
+border: 2px solid lightgrey;
+font-family: futura;
+}
+.picker:hover {
+border: 2px solid grey;
+background-color: lightgrey;
+}
+button {
+width: 30%;
+float: left;
+height: 30px;
+font-size: 20px;
+border-radius: 5px;
+border: 2px solid lightgrey;
+cursor: pointer;
+font-family: futura;
+}
+button:hover {
+border: 2px solid grey;
+background-color: lightgrey;
+}
+.title {
+text-align: center;
+font-size: 35px;
+}
+.copyright {
+font-size: 15px;
+color: grey;
+text-align: center;
+}
+.copyright:hover {
+background: lightgrey;
+cursor: default;
+}
+#more {
+position: absolute;
+top: 10px;
+left: 10px;
+font-size: 40px;
+background: transparent;
+border: none;
+width: 30px;
+}
+#more:hover {
+font-size: 46px;
+animation-name: go;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes go {
+ 
+  0% {font-size: 40px;}
+  100%   {font-size: 46px;}
+
+}
+
+
+</style>
+</head>
+<body onload="welcome()">
+<p class="title">Chukchi Translator</p><br><br>
+<select id="myNumber" class="picker">
+  <option value="No word selected...">Choose a word</option>
+  <option value="ыннэн">one</option>
+  <option value="ӈирэӄ">two</option>
+  <option value="ӈыроӄ">three</option>
+  <option value="ӈыраӄ">four</option>
+  <option value="мэтԓыӈэн">five</option>
+  <option value="ыннанмытԓыӈэн">six</option>
+  <option value="ӈыраӄмытԓыӈэн">seven</option>
+  <option value="амӈырооткэн">eight</option>
+  <option value="конъачгынкэн">nine</option>
+  <option value="мынгыткэн">ten</option>
+  <option value="Еттык">hi</option>
+  <option value="Амын еттык">hello</option>
+  <option value="Имто?">How are you?</option>
+  <option value="мэн'ин">who</option>
+  <option value="ръэнут">where</option>
+  <option value="мин'кы">where</option>
+  <option value="игыт, игыр">today</option>
+  <option value="эргатык">tomorrow</option>
+  <option value="айвэ">yesterday</option>
+  <option value="таран'-кы">to build a house</option>
+  <option value="тэг-ы-лгын">ski</option>
+  <option value="рытгэватъё">forgotten</option>
+  <option value="Ԓыгъоравэтԓьeн йиԓыйиԓ">Chukchi language</option>
+  <option value="к'ора-н'ы">reindeer</option>
+  <option value="илир">island</option>
+  <option value="вээм">river</option>
+  <option value="ан'к'ы">sea</option>
+  <option value="йъиик', и'и'-н">sky</option>
+  <option value="ыпа-н'ы">soup</option>
+  <option value="ыннээн">fish</option>
+</select>
+<button onclick="myFunction()">Translate</button>
+
+<textarea id="demo" placeholder="Chukchi translation..." class="box" name="Translation cleared..."></textarea>
+<br><br><br><br><br>
+
+<button style="width:100%;" onclick="theChicken()">Clear translator</button>
+<br><br><br>
+<button onclick="elPollo()" class="button" style="width:100%;">Copy translation</button><br><br><br>
+
+<a href="https://sites.google.com/view/explorer-search-engine/chukchi-language" target="_blank">
+<button id="more" title="More Chukchi languages resources">➜</button>
+</a>
+</body>
+</html>
