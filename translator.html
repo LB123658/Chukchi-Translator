@@ -385,6 +385,11 @@ document.getElementById("phrase").value = "";
 document.getElementById("phrase").value = "";
 } else if (window.location.search == "?dark_mode=on") {
 document.body.style.background = "#282828";
+document.getElementById("header").style.color = "grey";
+document.getElementById("phrase").style.background = "#383838";
+document.getElementById("phrase").style.color = "grey";
+document.getElementById("demo").style.background = "#383838";
+document.getElementById("demo").style.color = "grey";
 } else {
 document.getElementById("phrase").value = location.search.split("=")[1];
 }
